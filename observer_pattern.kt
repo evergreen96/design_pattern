@@ -72,7 +72,11 @@ class CurrentConditionsDisplay: Observer, DisplayElement {
     }
 }
 
-// weatherData를 가지고 있고 정보가 왔을 때 pulldisplay가 필요한 것만 업데이트 가능하게도 가능
+/*
+ weatherData를 가지고 있고 정보가 왔을 때 pulldisplay가 필요한 것만 업데이트 가능하게도 가능
+ 현재 display코드에는 weatherdata class가 없는데 가지고 있으면 내가 필요할 때 가능
+ */
+
 
 class PullDisplay: Observer, DisplayElement {
     private var temperature: Float = -999f
